@@ -2,7 +2,6 @@
   "buildCommand": "cd v0-certificado && npm install && npm run build",
   "outputDirectory": "v0-certificado/.next",
   "framework": "nextjs",
-  "installCommand": "cd v0-certificado && npm install",
-  "rootDirectory": "v0-certificado"
+  "installCommand": "cd v0-certificado && npm install"
 }
 
