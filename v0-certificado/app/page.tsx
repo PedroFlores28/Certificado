@@ -52,10 +52,10 @@ export default function Home() {
               </Link>
 
               <Link
-                href="/verificar"
+                href="/certificado"
                 className="block w-full bg-white hover:bg-[#F3F4F6] text-[#1F2A37] font-semibold py-4 px-8 rounded-lg transition-all border-2 border-[#1F2A37]/20 hover:border-[#E50A17]"
               >
-                Verificar Certificado
+                Buscar Certificado
               </Link>
             </div>
 

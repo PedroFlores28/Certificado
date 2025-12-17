@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation"
 import CertificateViewer from "@/components/certificate-viewer"
 import { getCertificateById } from "@/lib/certificates"
+import CertificateSearchForm from "./search-form"
 
 interface PageProps {
   params: Promise<{
@@ -14,9 +15,9 @@ export default async function CertificatePage({ params }: PageProps) {
   // Buscar el certificado en MongoDB
   const certificate = await getCertificateById(id)
 
-  // Si no se encuentra el certificado, mostrar página 404
+  // Si no se encuentra el certificado, mostrar formulario de búsqueda
   if (!certificate) {
-    notFound()
+    return <CertificateSearchForm initialId={id} />
   }
 
   // Verificar que el certificado esté activo
@@ -30,7 +31,8 @@ export default async function CertificatePage({ params }: PageProps) {
           >
             Certificado No Disponible
           </h1>
-          <p className="text-[#1F2A37]">Este certificado ha sido revocado o ya no está disponible.</p>
+          <p className="text-[#1F2A37] mb-6">Este certificado ha sido revocado o ya no está disponible.</p>
+          <CertificateSearchForm />
         </div>
       </div>
     )
