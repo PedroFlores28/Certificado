@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado UPC</title>
+    <style>
+        @font-face {
+            font-family: 'Solano Gothic MVB';
+            src: url('../assets/upc_sgothic-bdcap-webfont.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Zizou Slab';
+            src: url('../assets/Zizou Slab-Medium.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #2c3e50;
+        }
+        
+        .certificate-container {
+            position: relative;
+            width: 100%;
+            max-width: 1440px;
+            height: auto;
+        }
+        
+        .certificate-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate-container">
+        <img src="https://i.imgur.com/wGfOiE4.jpeg" alt="Fondo Certificado">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 2122.258" preserveAspectRatio="xMidYMid meet">
+          <text id="NOMBRE_COMPLETO" data-name="NOMBRE_COMPLETO" transform="translate(1500 1089)" fill="#13173c" font-size="130" font-family="Solano Gothic MVB" font-weight="bold" text-anchor="middle" letter-spacing="-0.051em"><tspan x="0" y="0">NOMBRE_COMPLETO</tspan></text>
+          <text id="RECONOCIMIENTO" data-name="RECONOCIMIENTO" transform="translate(1500 1238)" fill="#150100" font-size="43.5" font-family="Zizou Slab" text-anchor="middle" letter-spacing="0.012em"><tspan x="0" y="0">RECONOCIMIENTO</tspan></text>
+          <text id="MOTIVO" data-name="MOTIVO" transform="translate(1500 1302)" fill="#150100" font-size="43.5" font-family="Zizou Slab" text-anchor="middle" letter-spacing="0.018em"><tspan x="0" y="0">MOTIVO</tspan></text>
+          <text id="MENSAJE_AGRADECIMIENTO" data-name="MENSAJE_AGRADECIMIENTO" transform="translate(1500 1438)" fill="#150100" font-size="43.5" font-family="Zizou Slab" text-anchor="middle" letter-spacing="0.015em"><tspan x="0" y="0">MENSAJE_AGRADECIMIENTO</tspan></text>
+          <text id="FECHA_EMISION" data-name="FECHA_EMISION" transform="translate(1500 1569)" fill="#150100" font-size="43.5" font-family="Zizou Slab" text-anchor="middle" letter-spacing="0.015em"><tspan x="0" y="0">FECHA_EMISION</tspan></text>
+        </svg>
+    </div>
+</body>
+</html>
+

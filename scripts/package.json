@@ -1,0 +1,18 @@
+{
+  "name": "certificate-generator",
+  "version": "1.0.0",
+  "description": "Scripts para procesar Excel y generar certificados HTML",
+  "type": "module",
+  "scripts": {
+    "process-excel": "node process-excel.js",
+    "generate-certificates": "node generate-certificates.js",
+    "generate-table": "node generate-table.js",
+    "download-and-process": "node download-and-process.js",
+    "all": "npm run process-excel && npm run generate-certificates && npm run generate-table"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5",
+    "uuid": "^9.0.1"
+  }
+}
+
