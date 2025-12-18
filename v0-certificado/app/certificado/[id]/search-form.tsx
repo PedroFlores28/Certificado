@@ -33,7 +33,7 @@ export default function CertificateSearchForm({ initialId = "" }: CertificateSea
             Genera tu certificado
           </h1>
           <p className="text-white/80 mb-6">
-            Ingresa el ID del estudiante para ver su certificado.
+            GENERA TU CERTIFICADO CON TU ID
           </p>
         </div>
 
