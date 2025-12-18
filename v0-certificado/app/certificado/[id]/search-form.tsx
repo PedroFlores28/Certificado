@@ -29,12 +29,9 @@ export default function CertificateSearchForm({ initialId = "" }: CertificateSea
             alt="Logo UPC" 
             className="h-16 w-auto mx-auto mb-6" 
           />
-          <h1 className="text-3xl font-bold text-white mb-2">
-            404
-          </h1>
-          <h2 className="text-2xl font-bold text-white mb-4">
+          <h1 className="text-3xl font-bold text-white mb-4">
             Certificado No Encontrado
-          </h2>
+          </h1>
           <p className="text-white/80 mb-6">
             El certificado que buscas no existe o ha sido revocado.
           </p>
