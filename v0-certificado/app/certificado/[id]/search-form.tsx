@@ -30,10 +30,10 @@ export default function CertificateSearchForm({ initialId = "" }: CertificateSea
             className="h-16 w-auto mx-auto mb-6" 
           />
           <h1 className="text-3xl font-bold text-white mb-4">
-            Certificado No Encontrado
+            Genera tu certificado
           </h1>
           <p className="text-white/80 mb-6">
-            El certificado que buscas no existe o ha sido revocado.
+            Ingresa el ID del estudiante para ver su certificado.
           </p>
         </div>
 
